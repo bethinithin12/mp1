@@ -1,0 +1,68 @@
+/* About.css */
+
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean and modern font */
+    background-color: #f4f4f4; /* Light background for the entire app */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .about-container {
+    max-width: 800px; /* Limit width for readability */
+    margin: 50px auto; /* Center the content */
+    padding: 20px;
+    background-color: #fff; /* White background for the content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Left-aligned text for readability */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  h2 {
+    color: #333; /* Dark text color for the heading */
+    font-size: 28px; /* Larger font size for the heading */
+    margin-bottom: 20px; /* Space below heading */
+    border-bottom: 2px solid #007bff; /* Add a bottom border with brand color */
+    padding-bottom: 10px; /* Space below the border */
+  }
+  
+  p {
+    color: #555; /* Slightly lighter text color for paragraphs */
+    font-size: 18px; /* Standard font size for paragraphs */
+    margin-bottom: 15px; /* Space below each paragraph */
+  }
+  
+  ul {
+    color: #555; /* Text color for the list */
+    font-size: 18px; /* Standard font size for list items */
+    margin: 15px 0; /* Space above and below the list */
+    padding-left: 20px; /* Indent list */
+  }
+  
+  li {
+    margin-bottom: 10px; /* Space between list items */
+    position: relative; /* Position for custom bullet */
+  }
+  
+  li::before {
+     /* Custom bullet symbol */
+    color: #007bff; /* Brand color for bullet */
+    position: absolute; /* Position the bullet */
+    left: -20px; /* Space from the left */
+    font-size: 20px; /* Size of the bullet */
+  }
+  
+  @media (max-width: 600px) {
+    .about-container {
+      padding: 15px; /* Reduce padding on smaller screens */
+    }
+  
+    h2 {
+      font-size: 24px; /* Slightly smaller heading on mobile */
+    }
+  
+    p, ul {
+      font-size: 16px; /* Adjust font size for smaller screens */
+    }
+  }
+  

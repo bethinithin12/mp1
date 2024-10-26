@@ -1,0 +1,79 @@
+/* Form Box Styling */
+.form-box {
+    width: 90%;
+    max-width: 450px;
+    background: #fff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.form-box h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #3c00a0;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-field {
+    position: relative;
+    width: 100%;
+}
+
+.input-field i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 15px 12px 40px; /* Adjusted padding to make room for icons */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Button Styling */
+.primary-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .form-box {
+        padding: 30px;
+        box-shadow: none;
+    }
+}
